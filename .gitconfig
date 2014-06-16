@@ -138,3 +138,9 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[user]
+	name = Leo Chang
+	email = leo@shift90.com
+[push]
+	default = simple

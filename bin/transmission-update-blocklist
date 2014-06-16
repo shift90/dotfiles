@@ -1,0 +1,31 @@
+#!/bin/sh
+
+#follow this format for adding new blocklists. remember to use quotation marks around the url as shown
+urls[0]="http://list.iblocklist.com/?list=bt_level1&fileformat=p2p&archiveformat=gz"
+urls[1]="http://list.iblocklist.com/?list=ijfqtofzixtwayqovmxn&fileformat=p2p&archiveformat=gz"
+urls[2]="http://list.iblocklist.com/?list=bt_templist&fileformat=p2p&archiveformat=gz"
+#urls[3]="http://www.bluetack.co.uk/config/nipfilter.dat.gz"
+#urls[4]="http://www.bluetack.co.uk/config/pipfilter.dat.gz"
+
+#whenever you add a new blocklist, add the name so the gz file gets named properly
+blocklistnames[0]="bluetacklevel1"
+blocklistnames[1]="tbgprimarythreats"
+blocklistnames[2]="badpeers"
+#blocklistnames[3]="nipfilter"
+#blocklistnames[4]="pipfilter"
+
+#change this if you use an alternate folder for the blocklists, otherwise no need to touch this 
+cd /Users/$USER/Library/Application\ Support/Transmission/blocklists/
+
+#please dont touch anything below this line
+for ((i=0; i<${#urls[@]}; i++))
+do
+if curl -L ${urls[$i]} > ${blocklistnames[$i]}.gz; then
+if gunzip -f ${blocklistnames[$i]}.gz && rm -f ${blocklistnames[$i]}.gz; then
+echo "blocklist " ${blocklistnames[$i]} " updated"
+else
+rm -f ${blocklistnames[$i]}.gz
+echo "blocklist " ${blocklistnames[$i]} " not updated"
+fi
+fi
+done
