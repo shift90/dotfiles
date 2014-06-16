@@ -1,9 +1,14 @@
-" Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
-
 " Make Vim more useful
 set nocompatible
+" Install pathogen plugin
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
+" Use the Solarized Dark theme
+set background=dark
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+colorscheme solarized
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
 " Enhance command-line completion
@@ -41,7 +46,7 @@ set number
 " Enable syntax highlighting
 syntax on
 " Highlight current line
-set cursorline
+"set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
 " Show “invisible” characters
