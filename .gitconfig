@@ -139,6 +139,12 @@
 
 	insteadOf = "gist:"
 
+[url "git@bitbucket.org:"]
+
+	insteadOf = "bb:"
+	pushInsteadOf = "bitbbucket:"
+	pushInsteadOf = "git://bitbucket.org/"
+
 [user]
 	name = Leo Chang
 	email = leo@shift90.com
