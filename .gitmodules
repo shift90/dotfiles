@@ -10,3 +10,6 @@
 [submodule ".vim/bundle/csv.vim"]
 	path = .vim/bundle/csv.vim
 	url = git@github.com:chrisbra/csv.vim.git
+[submodule ".ssh"]
+	path = .ssh
+	url = bb:/shift90/sshconfig.git
