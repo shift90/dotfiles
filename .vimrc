@@ -47,11 +47,17 @@ set number
 syntax on
 " Highlight current line
 "set cursorline
-" Make tabs as wide as two spaces
-set tabstop=2
+" Setup indents - http://vim.wikia.com/wiki/Indenting_source_code
+set tabstop=8
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smartindent
+
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-set list
+"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+"set list
 " Highlight searches
 set hlsearch
 " Ignore case of searches
