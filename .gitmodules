@@ -13,3 +13,6 @@
 [submodule ".ssh"]
 	path = .ssh
 	url = bb:/shift90/sshconfig.git
+[submodule "git-flow-completion"]
+	path = git-flow-completion
+	url = git@github.com:petervanderdoes/git-flow-completion.git
