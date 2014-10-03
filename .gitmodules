@@ -13,3 +13,6 @@
 [submodule ".ssh"]
 	path = .ssh
 	url = bb:/shift90/sshconfig.git
+[submodule "CalendarHangout"]
+	path = CalendarHangout
+	url = git@github.com:Yeraze/CalendarHangout.git
