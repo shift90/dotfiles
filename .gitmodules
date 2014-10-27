@@ -9,13 +9,10 @@
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule ".vim/bundle/csv.vim"]
 	path = .vim/bundle/csv.vim
-	url = git@github.com:chrisbra/csv.vim.git
+	url = https://github.com/chrisbra/csv.vim.git
 [submodule ".ssh"]
 	path = .ssh
 	url = bb:/shift90/sshconfig.git
-[submodule "git-flow-completion"]
-	path = git-flow-completion
-	url = git@github.com:petervanderdoes/git-flow-completion.git
 [submodule "CalendarHangout"]
 	path = CalendarHangout
-	url = git@github.com:Yeraze/CalendarHangout.git
+	url = https://github.com/Yeraze/CalendarHangout.git

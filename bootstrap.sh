@@ -22,3 +22,9 @@ else
 #	fi;
 fi;
 unset doIt;
+
+
+## gitflow setup
+#brew install git-flow-avh
+#brew update
+#brew upgrade
