@@ -10,9 +10,3 @@
 [submodule ".vim/bundle/csv.vim"]
 	path = .vim/bundle/csv.vim
 	url = https://github.com/chrisbra/csv.vim.git
-[submodule ".ssh"]
-	path = .ssh
-	url = bb:/shift90/sshconfig.git
-[submodule "CalendarHangout"]
-	path = CalendarHangout
-	url = https://github.com/Yeraze/CalendarHangout.git
