@@ -15,6 +15,7 @@ blocklistnames[2]="badpeers"
 #blocklistnames[4]="pipfilter"
 
 #change this if you use an alternate folder for the blocklists, otherwise no need to touch this 
+mkdir -p /Users/$USER/Library/Application\ Support/Transmission/blocklists/
 cd /Users/$USER/Library/Application\ Support/Transmission/blocklists/
 
 #please dont touch anything below this line
